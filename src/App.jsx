@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import ListGroup from './components/ListGroup'
 import Form from "./components/Form"
-import { CrudProvider } from './context/crudContext'
+import { CrudProvider } from './context/CrudContext'
 
 
 const App = () => {
@@ -15,14 +15,15 @@ const App = () => {
 
   return (
     <CrudProvider>
-     <div className='bg-gray-800'>
+           <div className='bg-gray-800'>
       <Navbar handelForm = {handelForm}/>
       <ListGroup/>
       {
         showForm && (      <Form/> )
       }
     </div>
-</CrudProvider>
+
+    </CrudProvider>
   )
 }
 
