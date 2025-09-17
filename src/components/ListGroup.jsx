@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import ListItems from './ListItems'
-import CrudContext from '../context/CrudContext'
+// if the file is CrudContext.jsx
+import CrudContext from "../context/CrudContext.jsx";
 
 const ListGroup = () => {
   const {datas} = useContext(CrudContext)
