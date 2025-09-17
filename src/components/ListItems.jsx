@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import CrudContext from '../context/crudContext'
+import CrudContext from '../context/CrudContext'
 
 const ListItems = ({data , index}) => {
 
